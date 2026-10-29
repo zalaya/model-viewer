@@ -1,0 +1,39 @@
+{
+  "name": "model-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "development": "vp dev --config toolchain/vite/vite.config.ts",
+    "production": "vp preview --config toolchain/vite/vite.config.ts",
+    "build": "tsc -b toolchain/typescript/tsconfig.json && vp build --config toolchain/vite/vite.config.ts",
+    "format": "vp fmt --config toolchain/vite/vite.config.ts . --write",
+    "format:check": "vp fmt --config toolchain/vite/vite.config.ts . --check",
+    "lint": "vp lint --config toolchain/vite/vite.config.ts . --type-aware --type-check"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~7.0.2",
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.4.0",
+    "vite-plus": "1.4.0"
+  },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.4.0"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "bun",
+      "version": "1.4.4",
+      "onFail": "download"
+    }
+  }
+}
