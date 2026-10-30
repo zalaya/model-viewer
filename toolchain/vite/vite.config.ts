@@ -5,14 +5,10 @@ import { lazyPlugins } from 'vite-plus'
 
 export default {
   fmt: {
-    ignorePatterns: ['node_modules/**', 'toolchain/**', 'dist/**'],
     semi: false,
     jsxSingleQuote: true,
     singleQuote: true,
     trailingComma: 'none'
-  },
-  lint: {
-    ignorePatterns: ['node_modules/**', 'toolchain/**', 'dist/**']
   },
   resolve: {
     alias: {

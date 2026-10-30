@@ -7,9 +7,9 @@
     "development": "vp dev --config toolchain/vite/vite.config.ts",
     "production": "vp preview --config toolchain/vite/vite.config.ts",
     "build": "tsc -b toolchain/typescript/tsconfig.json && vp build --config toolchain/vite/vite.config.ts",
-    "format": "vp fmt --config toolchain/vite/vite.config.ts . --write",
-    "format:check": "vp fmt --config toolchain/vite/vite.config.ts . --check",
-    "lint": "vp lint --config toolchain/vite/vite.config.ts . --type-aware --type-check"
+    "format": "vp fmt --config toolchain/vite/vite.config.ts source/ --write",
+    "format:check": "vp fmt --config toolchain/vite/vite.config.ts source/ --check",
+    "lint": "vp lint --config toolchain/vite/vite.config.ts source/ --type-aware --tsconfig toolchain/typescript/tsconfig.app.json"
   },
   "dependencies": {
     "react": "^19.3.1",
