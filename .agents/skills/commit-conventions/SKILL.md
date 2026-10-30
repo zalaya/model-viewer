@@ -20,8 +20,17 @@ The subject must:
 - Use clear American English.
 - Describe the primary logical change.
 - Have no trailing punctuation.
-- Have no body, footer, emoji, issue reference, or breaking-change marker.
+- Have no body, footer, emoji, or breaking-change marker.
+- Do not add issue or pull request references manually to ordinary commits.
 - Avoid vague terms such as `initial`, `new`, `misc`, `stuff`, or `changes`.
+
+Platform-generated pull request references are allowed in merge and squash merge commit subjects:
+
+```text
+build: bump @types/node from 24.19.2 to 26.6.5 (#6)
+```
+
+Keep these references when they provide traceability to the merged pull request. Do not add them manually to unrelated commits.
 
 The imperative verb comes after the type and optional scope:
 
@@ -146,6 +155,7 @@ build: configure Vite
 ci: add build workflow
 chore: update repository metadata
 test: cover expired sessions
+build: bump @types/node from 24.19.2 to 26.6.5 (#6)
 ```
 
 ### Invalid
