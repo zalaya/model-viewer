@@ -8,7 +8,11 @@ export default {
     semi: false,
     jsxSingleQuote: true,
     singleQuote: true,
-    trailingComma: 'none'
+    trailingComma: 'none',
+    sortImports: {
+      internalPattern: ['@/'],
+      newlinesBetween: false
+    }
   },
   resolve: {
     alias: {
